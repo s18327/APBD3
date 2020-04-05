@@ -45,6 +45,7 @@ namespace APBD3.Controllers
             return Ok(listOfStudents);
         }
         [HttpGet("{id}")]
+        ///Use Students s nr. Ex. s123 for input.
         public IActionResult GetSemester(string id)
         {
             var listOfEnrolment = new List<Enrollment>();
